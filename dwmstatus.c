@@ -104,7 +104,7 @@ main(void)
 
 	for (;;sleep(90)) {
 		avgs = loadavg();
-		tmbln = mktimes("KW %W | %a %d. %b %H:%M:%S %Z %Y", tzberlin);
+		tmbln = mktimes("KW %V | %a %d. %b %H:%M:%S %Z %Y", tzberlin);
 
 		status = smprintf("%s | %s", avgs, tmbln);
 		setstatus(status);
