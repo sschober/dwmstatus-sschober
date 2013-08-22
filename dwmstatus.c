@@ -102,7 +102,7 @@ main(void)
 		return 1;
 	}
 
-	for (;;sleep(90)) {
+	for (;;sleep(1)) {
 		avgs = loadavg();
 		tmbln = mktimes("KW %V | %a %d. %b %H:%M:%S %Z %Y", tzberlin);
 
